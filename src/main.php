@@ -15,12 +15,12 @@ if(!preg_match("/^http|^https/", $argv[1])) {
 
 // check if file is exist
 if(!file_exists($argv[2])) {
-  fprintf(STDERR,RED.'Error : '.REDBG.__DIR__.'/'.$argv[2].WHITE.RED.' Not found'.WHITE."\n");
+  fprintf(STDERR,RED.'Error : '.REDBG.$argv[2].WHITE.RED.' Not found'.WHITE."\n");
   exit(1);
 }
 
 // explode string to listed string
-$list=explode("\n", file_get_contents(__DIR__.'/'.$argv[2]));
+$list=explode("\n", file_get_contents($argv[2]));
 
 // for loop main function
 for($x=0;$x<sizeof($list);$x++) {
