@@ -1,8 +1,8 @@
 # Toolers Admin panel finder
 
 ## depends & minimum requirements
-php-5.x
-php-curl
+- php-5.x
+- php-curl
 
 ## example 
 ```sh
